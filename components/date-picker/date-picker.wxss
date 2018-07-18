@@ -1,0 +1,64 @@
+
+picker-view{
+  background-color: white;
+  margin-top: 0rpx;
+  padding: 0;
+  width: 100%; 
+  height: 380rpx;
+}
+
+picker-view-column view{
+  vertical-align:middle; 
+  font-size: 32rpx;
+  line-height: 50rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picker{
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+
+/* ----------------------------------------- */
+
+.animation-element-wrapper {
+  display: flex;  
+  left: 0;
+  top:0;
+  width: 100%; 
+}
+
+.animation {
+  height: 470rpx;
+  
+  
+}
+.animation-element {
+  display: flex;  
+  width: 100%;
+  height: 470rpx;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+text{
+  color: #999999;
+  display: inline-flex;  
+  margin-top: 20rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 34rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+  display: block;
+  position: fixed;
+  height: 1rpx;
+  width: 100%;
+  background-color: #eeeeee;
+}

@@ -1,0 +1,22 @@
+<!-- 时间选择器 -->
+  <view class="picker {{show?'animation':''}}">
+    <view class="animation-element-wrapper">
+      <view class="animation-element">
+        <view class="line"></view>
+        <picker-view indicator-style="height: 30rpx;" value="{{value}}" bindchange="bindChange">
+          <!-- 日期 -->
+          <picker-view-column style="flex:3">
+            <view wx:for="{{dates}}" wx:key="">{{item.month}}月{{item.date}}日 {{item.weekDay}}</view>
+          </picker-view-column>
+          <!-- 时 -->
+          <picker-view-column>
+            <view wx:for="{{hours}}" wx:key="">{{item}}</view>
+          </picker-view-column>
+          <!-- 分 -->
+          <picker-view-column>
+            <view wx:for="{{minutes}}" wx:key="">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+    </view>
+  </view>

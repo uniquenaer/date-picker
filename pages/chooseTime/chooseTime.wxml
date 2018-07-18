@@ -1,0 +1,8 @@
+<!-- chooseTime.wxml -->
+<view class="view-box">
+  <view class="demo">
+    <view class="infoText">{{month}}月{{date}}日 {{weekDay}} {{hour}}:{{minute}}</view>
+    <button class="animation-button" bindtap="translate">选择时间</button>
+  </view>
+  <date-picker show="{{show}}" bindchangeDate="changeDate"/>
+</view>
